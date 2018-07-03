@@ -28,6 +28,8 @@ set wildmenu
 set lazyredraw
 set showmatch           " higlight matching parenthesis
 set fillchars+=vert:┃
+set list
+set listchars=tab:▸\ ,eol:¬  "makes Vim show invisible characters
 " }}}
 " Searching {{{
 set ignorecase          " ignore case when searching
@@ -43,9 +45,22 @@ nnoremap <space> za
 set foldlevelstart=10   " start with fold level of 1
 " }}}
 " Line Shortcuts {{{
+nnoremap <up> <nop>                
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 inoremap jk <esc>
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " }}}
 " Leader Shortcuts {{{
 let mapleader=","
