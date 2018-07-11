@@ -1,0 +1,39 @@
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = ~/.oh-my-zsh/
+[submodule ".vim/plugged/plaintasks.vim"]
+	path = .vim/plugged/plaintasks.vim
+	url = ~/.vim/plugged/plaintasks.vim
+[submodule ".vim/plugged/vim-prettier"]
+	path = .vim/plugged/vim-prettier
+	url = ~/.vim/plugged/vim-prettier
+[submodule ".vim/plugged/ctrlp.vim"]
+	path = .vim/plugged/ctrlp.vim
+	url = ~/.vim/plugged/ctrlp.vim
+[submodule ".vim/plugged/nerdtree"]
+	path = .vim/plugged/nerdtree
+	url = ~/.vim/plugged/nerdtree
+[submodule ".vim/plugged/nerdtree-git-plugin"]
+	path = .vim/plugged/nerdtree-git-plugin
+	url = ~/.vim/plugged/nerdtree-git-plugin
+[submodule ".vim/plugged/syntastic"]
+	path = .vim/plugged/syntastic
+	url = ~/.vim/plugged/syntastic
+[submodule ".vim/plugged/vim-airline"]
+	path = .vim/plugged/vim-airline
+	url = ~/.vim/plugged/vim-airline
+[submodule ".vim/plugged/vim-airline-themes"]
+	path = .vim/plugged/vim-airline-themes
+	url = ~/.vim/plugged/vim-airline-themes
+[submodule ".vim/plugged/vim-fugitive"]
+	path = .vim/plugged/vim-fugitive
+	url = ~/.vim/plugged/vim-fugitive
+[submodule ".vim/plugged/vim-gitgutter"]
+	path = .vim/plugged/vim-gitgutter
+	url = ~/.vim/plugged/vim-gitgutter
+[submodule ".vim/plugged/vim-test"]
+	path = .vim/plugged/vim-test
+	url = ~/.vim/plugged/vim-test
+[submodule ".vim/plugged/vimwiki"]
+	path = .vim/plugged/vimwiki
+	url = ~/.vim/plugged/vimwiki
