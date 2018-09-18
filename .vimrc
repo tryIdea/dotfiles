@@ -27,9 +27,9 @@ set nocursorline        " highlight current line
 set wildmenu
 set lazyredraw
 set showmatch           " higlight matching parenthesis
-set fillchars+=vert:┃
-set list
-set listchars=tab:▸\ ,eol:¬  "makes Vim show invisible characters
+"set fillchars+=vert:┃
+"set list
+"set listchars=tab:▸\ ,eol:¬  "makes Vim show invisible characters
 " }}}
 " Searching {{{
 set ignorecase          " ignore case when searching

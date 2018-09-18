@@ -119,4 +119,4 @@ Token.Toolbar.Arg.Text = 'nobold'
 # DNS to call by -d option
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][netloc][:port][/dbname]
-dev = mysql://root@10.100.28.67:8001
+dev = mysql://rootroot@rm-8vbki54103603y2laxo.mysql.zhangbei.rds.aliyuncs.com:3306

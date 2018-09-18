@@ -95,5 +95,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export MAVEN_HOME=$HOME/Downloads/apache-maven-3.5.3
+export MAVEN_HOME=$HOME/soft/apache-maven-3.5.4
 export PATH=$PATH:$MAVEN_HOME/bin
