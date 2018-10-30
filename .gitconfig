@@ -16,7 +16,7 @@
     recent-branches = !git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(refname:short)'
 
     # diff
-    d = diff                          # diff unstaged changes
+    df = diff                          # diff unstaged changes
     dc = diff --cached                # diff staged changes
     last = diff HEAD^                 # diff last committed change
 
@@ -37,3 +37,6 @@
 
 [format]
     pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+[user]
+	email = dufugang@yunlizhihui.com
+	name = dufugang

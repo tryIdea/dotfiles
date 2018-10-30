@@ -120,3 +120,4 @@ Token.Toolbar.Arg.Text = 'nobold'
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][netloc][:port][/dbname]
 dev = mysql://rootroot@rm-8vbki54103603y2laxo.mysql.zhangbei.rds.aliyuncs.com:3306
+pre = mysql://pre_env_rds:per@85100@rm-8vbmt7f9p629tqhuyno.mysql.zhangbei.rds.aliyuncs.com:3306
