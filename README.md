@@ -5,6 +5,5 @@ my dotfiles
 
 #### 使用方法
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 安装命令：make install
+2. 更新命令：make update
