@@ -40,3 +40,7 @@
 [user]
 	email = dufugang@yunlizhihui.com
 	name = dufugang
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false

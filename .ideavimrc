@@ -98,6 +98,8 @@ nnoremap g<c-i> <c-i>
 nnoremap / :action Find<cr>
 " but preserve ideavim search
 nnoremap g/ /
+" vim-multiple-cursors commands
+set multiple-cursors
 " }}}
 "
 " vim:foldmethod=marker:foldlevel=0
