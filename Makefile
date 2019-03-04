@@ -8,6 +8,7 @@ install:
 	cp .gitconfig ~/
 	cp .myclirc ~/
 	cp .ideavimrc ~/
+	cp .ssh/config ~/.ssh/config
 
 update:
 	cp ~/.vimrc .
@@ -16,3 +17,5 @@ update:
 	cp ~/.gitconfig .
 	cp ~/.myclirc .
 	cp ~/.ideavimrc .
+	mkdir .ssh
+	cp ~/.ssh/config .ssh/config

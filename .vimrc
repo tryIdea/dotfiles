@@ -131,6 +131,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vimwiki/vimwiki'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'mattn/vim-sqlfmt'
 call plug#end()
 " }}}
 " airline {{{
