@@ -9,6 +9,7 @@ install:
 	cp .myclirc ~/
 	cp .ideavimrc ~/
 	cp .ssh/config ~/.ssh/config
+	cp .bin/tmuxinator.zsh ~/.bin/tmuxinator.zsh
 
 update:
 	cp ~/.vimrc .
@@ -17,5 +18,7 @@ update:
 	cp ~/.gitconfig .
 	cp ~/.myclirc .
 	cp ~/.ideavimrc .
-	mkdir .ssh
+	test -d .ssh || mkdir -p .ssh
 	cp ~/.ssh/config .ssh/config
+	test -d .bin || mkdir -p .bin
+	cp ~/.bin/tmuxinator.zsh .bin/tmuxinator.zsh

@@ -67,6 +67,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+source ~/.bin/tmuxinator.zsh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,3 +100,4 @@ source $ZSH/oh-my-zsh.sh
 alias vim="mvim -v"
 export MAVEN_HOME=$HOME/soft/apache-maven-3.5.4
 export PATH=$PATH:$MAVEN_HOME/bin
+export EDITOR='vim'
