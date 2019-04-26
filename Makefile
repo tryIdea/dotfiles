@@ -4,7 +4,7 @@ install:
 	cp -rf .vim ~/
 	cp .vimrc ~/
 	cp .zshrc ~/
-	cp .tmux.conf ~/
+#	cp .tmux.conf ~/
 	cp .gitconfig ~/
 	cp .myclirc ~/
 	cp .ideavimrc ~/
@@ -14,7 +14,7 @@ install:
 update:
 	cp ~/.vimrc .
 	cp ~/.zshrc .
-	cp ~/.tmux.conf .
+#	cp ~/.tmux.conf .
 	cp ~/.gitconfig .
 	cp ~/.myclirc .
 	cp ~/.ideavimrc .

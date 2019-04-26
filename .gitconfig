@@ -44,3 +44,5 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[status]
+	submodulesummary = 1
