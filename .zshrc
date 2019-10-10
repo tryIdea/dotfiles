@@ -63,6 +63,8 @@ ZSH_THEME="af-magic"
 plugins=(
   git vi-mode httpie jsontools tmux tmuxinator web-search
   common-aliases docker encode64
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,6 +100,8 @@ source ~/.bin/tmuxinator.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="mvim -v"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
 export MAVEN_HOME=$HOME/soft/apache-maven-3.5.4
-export PATH=$PATH:$MAVEN_HOME/bin
+export CXF_HOME=$HOME/soft/apache-cxf-3.3.3
+export PATH=$PATH:$JAVA_HOME:$MAVEN_HOME/bin:$CXF_HOME/bin
 export EDITOR='vim'

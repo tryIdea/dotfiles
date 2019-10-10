@@ -2,12 +2,14 @@
 " Colors {{{
 syntax enable           " enable syntax processing
 set t_Co=256            " required
-colorscheme badwolf
+"set background=light
+colorscheme PaperColor  "  solarized
 " }}}
 " Misc {{{
 set backspace=indent,eol,start
 let g:vimwiki_list = [{'path': '~/.wiki/'}]
 set clipboard=unnamed
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " }}}
 " Spaces & Tabs {{{
 set tabstop=4           " 4 space tab
@@ -107,8 +109,8 @@ augroup configgroup
     autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 augroup END
 " }}}
-" Testing {{{
-let test#python#runner = 'nose'
+" Markdown {{{
+let g:instant_markdown_autostart = 0
 " }}}
 " Backups {{{
 set backup
@@ -124,16 +126,17 @@ Plug 'scrooloose/nerdtree'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'elentok/plaintasks.vim'
-Plug 'janko-m/vim-test'
 Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vimwiki/vimwiki'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/vim-sqlfmt'
 Plug 'tpope/vim-surround'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi'
+Plug 'plasticboy/vim-markdown'
+Plug 'suan/vim-instant-markdown'
+Plug 'valloric/youcompleteme'
 call plug#end()
 " }}}
 " airline {{{
