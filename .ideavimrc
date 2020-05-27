@@ -18,7 +18,7 @@
 " :action {actionName}
 
 " basic {{{
-let mapleader=','
+let mapleader='<space>'
 
 set hlsearch
 set incsearch
@@ -62,6 +62,9 @@ nnoremap <space>[ :action GotoSuperMethod<cr>
 nnoremap <space>u :action FindUsages<cr>
 nnoremap <space>gt :action GotoTest<cr>
 nnoremap <space>k :action HighlightUsagesInFile<cr>
+nnoremap <space>pw :action OpenProjectWindows<CR>
+nnoremap <space>pwn :action NextProjectWindow<CR>
+map \pw :action OpenProjectWindows<CR>
 " }}}
 " Insert mode shortcut {{{
 inoremap <C-h> <Left>
@@ -97,6 +100,15 @@ nnoremap \d :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
 nnoremap \c :action CheckStyleCurrentFileAction<cr>
 " }}}
+" pluign settings {{{
+set easymotion
+set surround
+set multiple-cursors
+set commentary
+set ReplaceWithRegister
+set argtextobj
+set textobj-entire
+" }}}
 " other settings {{{
 " code refactoring
 nnoremap <space>rr :action RenameElement<cr>
@@ -116,10 +128,6 @@ nnoremap g<c-i> <c-i>
 nnoremap / :action Find<cr>
 " but preserve ideavim search
 nnoremap g/ /
-" vim-multiple-cursors commands
-set multiple-cursors
-" vim-surround
-set surround
 " }}}
 "
 " vim:foldmethod=marker:foldlevel=0
