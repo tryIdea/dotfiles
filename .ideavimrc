@@ -18,8 +18,7 @@
 " :action {actionName}
 
 " basic {{{
-let mapleader='<space>'
-
+let mapleader = " "
 set hlsearch
 set incsearch
 set ignorecase
@@ -29,43 +28,50 @@ set relativenumber
 set number
 set scrolloff=3
 set history=10000
-set clipboard=unnamed
+" Enable fancy line join: https://github.com/JetBrains/ideavim/blob/master/doc/ideajoin-examples.md
+set ideajoin
+" Fancy clipboard
+set clipboard+=ideaput
 " }}}
+
 " easy system clipboard copy/paste {{{
-noremap <space>y "*y
-noremap <space>Y "*Y
-noremap <space>p "*p
-noremap <space>P "*P
+noremap <Leader>y "*y
+noremap <Leader>Y "*Y 
+noremap <Leader>p "*p
+noremap <Leader>P "*P
 " }}}
+
 " easy window navigation {{{
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
-nnoremap <c-h> <c-w>h
+nnoremap <c-h> <c-w>
 nnoremap <c-k> <c-w>k
 nnoremap <a-h> gT
-nnoremap <a-l> gt
+nnoremap <a-l> gth
 nnoremap <c-s-tab> gT
 nnoremap <c-tab> gt
 " }}}
+
 " actions {{{
 " Show all the provided actions via `:actionlist`
-nnoremap <space>q :action CloseContent<cr>
-nnoremap <space>Q :action ReopenClosedTab<cr>
-nnoremap <space>\ :action VimFilePrevious<cr>
-nnoremap <space>e :action Switcher<cr>
-nnoremap <space>t :action FileStructurePopup<cr>
-nnoremap <space>T :action GotoSymbol<cr>
-nnoremap <space>a :action GotoAction<cr>
-nnoremap <space>b :action ToggleLineBreakpoint<cr>
-nnoremap <space>] :action GotoImplementation<cr>
-nnoremap <space>[ :action GotoSuperMethod<cr>
-nnoremap <space>u :action FindUsages<cr>
-nnoremap <space>gt :action GotoTest<cr>
-nnoremap <space>k :action HighlightUsagesInFile<cr>
-nnoremap <space>pw :action OpenProjectWindows<CR>
-nnoremap <space>pwn :action NextProjectWindow<CR>
+nnoremap <Leader>q :action CloseContent<cr>
+nnoremap <Leader>Q :action ReopenClosedTab<cr>
+nnoremap <Leader>\ :action VimFilePrevious<cr>
+nnoremap <Leader>e :action Switcher<cr>
+nnoremap <Leader>t :action FileStructurePopup<cr>
+nnoremap <Leader>T :action GotoSymbol<cr>
+nnoremap <Leader>a :action GotoAction<cr>
+nnoremap <Leader>b :action ToggleLineBreakpoint<cr>
+nnoremap <Leader>] :action GotoImplementation<cr>
+nnoremap <Leader>[ :action GotoSuperMethod<cr>
+nnoremap <Leader>u :action FindUsages<cr>
+nnoremap <Leader>gt :action GotoTest<cr>
+nnoremap <Leader>k :action HighlightUsagesInFile<cr>
+nnoremap <Leader>pw :action OpenProjectWindows<CR>
+nnoremap <Leader>pwn :action NextProjectWindow<CR>
 map \pw :action OpenProjectWindows<CR>
 " }}}
+
 " Insert mode shortcut {{{
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
@@ -75,6 +81,7 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 " }}}
+
 " code navigation {{{
 " Quit insert mode
 inoremap jk <Esc>
@@ -88,7 +95,7 @@ nnoremap U <C-r>
 nnoremap Y y$
 
 " clear the search buffer when hitting return
-nnoremap <space><cr> :nohlsearch<cr>
+nnoremap <Leader><cr> :nohlsearch<cr>
 
 " Move half page faster
 nnoremap <Leader>d  <C-d>
@@ -100,6 +107,7 @@ nnoremap \d :action DebugClass<cr>
 nnoremap \D :action Debug<cr>
 nnoremap \c :action CheckStyleCurrentFileAction<cr>
 " }}}
+
 " pluign settings {{{
 set easymotion
 set surround
@@ -109,13 +117,14 @@ set ReplaceWithRegister
 set argtextobj
 set textobj-entire
 " }}}
+
 " other settings {{{
 " code refactoring
-nnoremap <space>rr :action RenameElement<cr>
+nnoremap <Leader>rr :action RenameElement<cr>
 
 " unimpaired mappings
-nnoremap [<space> O<esc>j
-nnoremap ]<space> o<esc>k
+nnoremap [<Leader>O<esc>j
+nnoremap ]<Leader>o<esc>k
 
 " built-in navigation to navigated items works better
 nnoremap <c-o> :action Back<cr>

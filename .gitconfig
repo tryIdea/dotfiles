@@ -46,3 +46,12 @@
 	prompt = false
 [status]
 	submodulesummary = 1
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[log]
+	date = format:%Y-%m-%d %H:%M:%S
