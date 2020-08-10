@@ -99,7 +99,7 @@ nnoremap <Leader><cr> :nohlsearch<cr>
 
 " Move half page faster
 nnoremap <Leader>d  <C-d>
-nnoremap <Leader>u  <C-u>
+nnoremap <Leader>f  <C-u>
 
 nnoremap \r :action RunClass<cr>
 nnoremap \R :action Run<cr>
