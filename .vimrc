@@ -10,6 +10,7 @@ set backspace=indent,eol,start
 let g:vimwiki_list = [{'path': '~/.wiki/'}]
 set clipboard=unnamed
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set pastetoggle=<F3>
 " }}}
 " Spaces & Tabs {{{
 set tabstop=4           " 4 space tab
