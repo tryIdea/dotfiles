@@ -134,9 +134,10 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'mattn/vim-sqlfmt'
 Plug 'tpope/vim-surround'
-Plug 'mg979/vim-visual-multi'
+" Plug 'mg979/vim-visual-multi'
 Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown'
+Plug 'NLKNguyen/papercolor-theme'
 " Plug 'valloric/youcompleteme'
 call plug#end()
 " }}}

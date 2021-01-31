@@ -99,16 +99,17 @@ source ~/.bin/tmuxinator.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="mvim -v"
+#alias vim="mvim -v"
 alias ..="cd .."
 alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+alias mux=tmuxinator
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
-export MAVEN_HOME=$HOME/soft/apache-maven-3.5.4
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
+#export MAVEN_HOME=$HOME/soft/apache-maven-3.5.4
 #export CXF_HOME=$HOME/soft/apache-cxf-3.3.3
-export PATH=$PATH:$JAVA_HOME:$MAVEN_HOME/bin #:$CXF_HOME/bin
+#export PATH=$PATH:$JAVA_HOME:$MAVEN_HOME/bin #:$CXF_HOME/bin
 export EDITOR='vim'
 export CDPATH=.:~:/etc:/~/project
