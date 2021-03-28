@@ -5,8 +5,8 @@ install:
 	cp -rf .vim ~/
 	cp .vimrc ~/
 	cp .zshrc ~/
-	cp .tmux.conf ~/
-	cp .gitconfig ~/
+	cp -f .tmux.conf ~/
+	cp -f .gitconfig ~/
 	cp .myclirc ~/
 	cp .ideavimrc ~/
 	cp .ssh/config ~/.ssh/config
