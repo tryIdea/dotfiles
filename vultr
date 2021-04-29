@@ -12,8 +12,8 @@ function newInstance() {
    -X POST \
    -H "Authorization: Bearer $VULTR_API_KEY" \
    -H "Content-Type: application/json" \
-   --data-raw '{
-     "region" : "sea",
+   --data '{
+     "region" : "yto",
      "plan" : "vc2-1c-1gb",
      "label" : "ssr Instance",
      "snapshot_id" : "a7cecbf0-df4b-4236-8a26-076b010be858",
@@ -23,6 +23,7 @@ function newInstance() {
 
 function getInstance(){
   curl "https://api.vultr.com/v2/instances" -X GET -H "Authorization: Bearer $VULTR_API_KEY"
+  #jq '.instances[] | .id, .main_ip, .power_status'
 }
 
 function deleteInstance(){
