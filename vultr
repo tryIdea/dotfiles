@@ -13,7 +13,7 @@ function newInstance() {
    -H "Authorization: Bearer $VULTR_API_KEY" \
    -H "Content-Type: application/json" \
    --data '{
-     "region" : "yto",
+     "region" : "lhr",
      "plan" : "vc2-1c-1gb",
      "label" : "ssr Instance",
      "snapshot_id" : "a7cecbf0-df4b-4236-8a26-076b010be858",
