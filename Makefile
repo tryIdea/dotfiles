@@ -1,7 +1,6 @@
 all: install
 
 install:
-	yum install tmux
 	cp -rf .vim ~/
 	cp .vimrc ~/
 	cp .zshrc ~/
@@ -9,6 +8,7 @@ install:
 	cp -f .gitconfig ~/
 	cp .myclirc ~/
 	cp .ideavimrc ~/
+	test -d ~/.ssh || mkdir -p ~/.ssh
 	cp .ssh/config ~/.ssh/config
 
 update:
